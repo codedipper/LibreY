@@ -160,6 +160,13 @@
               "i2p": null,
               "country": "PL",
               "librey": false
+          },
+          {
+              "clearnet": "https://librex.supernets.org/",
+              "tor": null,
+              "i2p": null,
+              "country": "US",
+              "librey": false
           }
     ]
 }
