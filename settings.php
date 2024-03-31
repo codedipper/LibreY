@@ -43,12 +43,11 @@
                 <label for="theme"><?php printtext("settings_theme");?>:</label>
                 <select name="theme">
                 <?php
-                    $themes = "<option value=\"amoled\">AMOLED</option>
-                    <option value=\"darker\">Darker</option>
+                    $themes = "<option value=\"darker\">Darker</option>
                     <option value=\"amoled\">AMOLED</option>
                     <option value=\"light\">Light</option>
                     <option value=\"auto\">Auto</option>
-					<option value=\"dracula\">Dracula</option>
+                    <option value=\"dracula\">Dracula</option>
                     <option value=\"nord\">Nord</option>
                     <option value=\"night_owl\">Night Owl</option>
                     <option value=\"discord\">Discord</option>
