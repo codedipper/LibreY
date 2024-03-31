@@ -32,6 +32,7 @@
         // whether to show where the result is from on the results page
         "show_result_source" => true,
 
+	// use `ls --ignore={styles,auto}.css static/css | cut -d. -f1` to list valid themes
 	"default_theme" => "amoled",
 
         /*
