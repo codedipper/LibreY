@@ -32,6 +32,8 @@
         // whether to show where the result is from on the results page
         "show_result_source" => true,
 
+	"default_theme" => "amoled",
+
         /*
             Preset privacy friendly frontends for users, these can be overwritten by users in the settings
             e.g.: Preset the invidious instance URL: "instance_url" => "https://yewtu.be",
