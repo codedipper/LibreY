@@ -9,6 +9,11 @@
         <link rel="stylesheet" type="text/css" href="static/css/styles.css"/>
         <link title="<?php printtext("page_title"); ?>" type="application/opensearchdescription+xml" href="opensearch.xml?method=POST" rel="search"/>
         <link rel="stylesheet" type="text/css" href="<?php
-$theme = $_REQUEST["theme"] ?? trim(htmlspecialchars($_COOKIE["theme"] ?? "amoled"));
-                echo "static/css/" . $theme . ".css";
+        if (isset($opts)){
+            echo "static/css/" . $opts->theme . ".css";
+        } else {
+            require_once "misc/search_engine.php";
+            $opts = load_opts();
+            echo "static/css/" . $opts->theme . ".css";
+        }
         ?>"/>
