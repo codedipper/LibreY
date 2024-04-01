@@ -9,11 +9,9 @@
         <link rel="stylesheet" type="text/css" href="static/css/styles.css"/>
         <link title="<?php printtext("page_title"); ?>" type="application/opensearchdescription+xml" href="opensearch.xml?method=POST" rel="search"/>
         <link rel="stylesheet" type="text/css" href="<?php
-        if (isset($opts)){
-            echo "static/css/" . $opts->theme . ".css";
-        } else {
+        if (!isset($opts)){
             require_once "misc/search_engine.php";
             $opts = load_opts();
-            echo "static/css/" . $opts->theme . ".css";
         }
+            echo "static/css/" . $opts->theme . ".css";
         ?>"/>
