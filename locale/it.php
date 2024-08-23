@@ -1,3 +1,5 @@
+// github.com/ThomasDC84 github.com/codedipper
+
 <?php
 
 return array(
